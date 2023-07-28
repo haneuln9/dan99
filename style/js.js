@@ -1,14 +1,19 @@
-// 변수 목록= 체중 , 키
-let weight = 160;
-let height = 50;
-const weight_bt = document.querySelector('#weight_btn');
-const height_bt = document.querySelector('#height_btn');
-console.log(weight_bt, height_bt);
+// 변수 목록= 체중 , 키입력버튼 초기화 버튼
+let weight = []
+let height = []
+const weight_bt = document.querySelector('#w_btn');//키
+const height_bt = document.querySelector('#h_btn');//몸무게
+const reset = document.querySelector('#reset');//초기화
+console.log(weight_bt, height_bt, reset);
 //------
 weight_bt.addEventListener('click',function(){
-    result1.value = weight;
+    userWeight.value = weight;
 })
 height_bt.addEventListener('click', function(){
-    result2.value = height;
+    userHeight.value = height;
 })
+
+// reset.addEventListener ('click', function(){
+//     pwd.value = null;
+// })
 
